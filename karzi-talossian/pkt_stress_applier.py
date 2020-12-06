@@ -11,7 +11,7 @@ def get_syllables(word: str) -> List[str]:
         # search for syllables from the end of the word because it's easier
         # otherwise disambiguating final n/m from initial n/m would
         # make things more complicated
-        syllable = re.search("[^aeɛiou][aeɛiou][nm]?$", word)
+        syllable = re.search("([^aeɛiou]|ts|tʃ)[aeɛiou][nm]?$", word)
         # calling group() gets the actual text matched
         syllables.append(syllable.group())
         word = word[:syllable.start()]
