@@ -93,7 +93,7 @@ if __name__ == "__main__":
     parser.add_argument('lex_file', action = "store", type = argparse.FileType("r", encoding = "utf-8"))
     parser.add_argument('-o', '--out', dest = 'out_file', action = "store", type = argparse.FileType("w", encoding = "utf-8"), default = None)
 
-    args = parser.parse_args(['karzi-talossian/pkt_lex'])
+    args = parser.parse_args()
 
     if not args.out_file:
         args.out_file = open(args.lex_file.name + "_stressed", 'w')
