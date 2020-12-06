@@ -82,7 +82,7 @@ def apply_stress(word: str) ->str:
     after = secondary_stress(after)
 
     # rejoin all of the syllables to return 1 string
-    return list(chain(before, [primary_stress], after)).join()
+    return "".join(chain(before, [primary_stress], after))
 
 
 if __name__ == "__main__":
