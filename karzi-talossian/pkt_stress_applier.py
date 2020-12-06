@@ -5,6 +5,10 @@ from typing import List
 from itertools import chain
 
 
+def reverse(l: List):
+    return list(reversed(l))
+
+
 def get_syllables(word: str) -> List[str]:
     syllables = []
     while word:
@@ -17,7 +21,7 @@ def get_syllables(word: str) -> List[str]:
         word = word[:syllable.start()]
     
     # because the syllables were added in reverse order, just switch them around here
-    return syllables.reverse()
+    return reverse(syllables)
 
 
 strong_onsets = ['ts', 'tʃ']
@@ -78,7 +82,7 @@ def apply_stress(word: str) ->str:
         after = syllables[1:]
     
     # the secondary stress rules are symmetric
-    before = secondary_stress(before.reverse()).reverse()
+    before = reverse(secondary_stress(reverse(before)))
     after = secondary_stress(after)
 
     # rejoin all of the syllables to return 1 string
