@@ -104,5 +104,5 @@ if __name__ == "__main__":
     
     for line in args.lex_file:
         word = line.strip()
-        args.out_file.write(apply_stress(word))
+        args.out_file.write(apply_stress(word) + '\n')
 
