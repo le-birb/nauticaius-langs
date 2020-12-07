@@ -4,21 +4,21 @@ N / ŋ / _k
 N / m / _p
 N / n /_t
 
-[iea] / ə / [^']_
+[iɛa] / ə / [^']_
 [uo] / ʊ / [^']_
 
 ' //
 
 V / / V.*_#
 
-r / l / V_
-r / l / F_
-r / l / #_
+ɾ / l / V_
+ɾ / l / F_
+ɾ / l / #_
 
 N // _#
 
 % eliminate word-initial vowels and the schwa in first and final syllables in polysyllabic words
-ə / / #C_.*V
+ə / / #C*_.*V
 ə / / V.*_C?#
 V / / #_.*V
 
@@ -37,38 +37,52 @@ lm / ml / #_
 % assimilation of plosive voicing
 t / d / _[dð]
 d / t / _[tþ]
+T / D / D_
+D / T / T_
 
-ll / jl /
+ɾ / l / [^nm]_
 
-lh / ll /
-Fl / ll /
-Zl / jl /
+ll / ɮ /
+
+lH / ɬ /
+Hl / ɬ /
+Zl / ɮ /
+lZ / ɮ /
+
+
+tl / tɬ /
+dl / dɮ /
+
+hF / Fː /
+F / ː / F_
+
+% ə / / V.*_C*#
+N / / _#
 
 h / /
 
+l / l̩ / #_[^aɛəiouʊl]
+l / l̩ / [^aɛəiouʊl]_#
+
 N / M / #_C
-əN / M / _C
+əN / M /
+əl / l̩ /
 
-l / l̩ / #_[^aeəiouʊl]
-l / l̩ / [^aeəiouʊl]_#
+Nɾ / ɾ /
+Mɾ / əɾ /
 
-% somewhere around here was nɾ → ɾ 
+ʊʊ / uʊ /
 
-% simply romanization conventions
-thl / tl /
-e / é /
-ə / e /
-þþ / tth /
-ðð / ddh /
-ǵǵ / ggh /
-śś / ssh /
-źź / zzh /
-þ / th /
-ð / dh /
-tś / ch /
-ś / sh /
-ź / zh /
-ǵ / gh /
-ŋ / n /
-u / ú /
-ʊ / u /
+[əʊ] / / l̩_
+[əʊ] / / M_
+
+[pb] / / [pb]_
+[td] / / [td]_
+[kg] / / [kg]_
+
+[dt] / / [ðθ]_#
+
+Z / H / T_
+Z / H / #_T
+H / Z / D_
+H / Z / #_D
