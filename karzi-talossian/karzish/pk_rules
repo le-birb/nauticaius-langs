@@ -1,7 +1,35 @@
 
+% somewhere in here some vowels got deleted and stuff
+
+% one of the first differences between pt and pk is affricate voicing
+A > E / V_V
+
+% /i/ and /a/ cause some vowel raising and lowering, respectively
+% gonna need to figure out the order they happened
+
+i > e / _C*'?a
+o > ɔ / _C*'?a
+u > o / _C*'?a
+
+ɛ > e / _C*'?i
+a > ɛ / _C*'?i
+o > u / _C*'?i
+
 % pretty early on was a palatalization triggered by /i/
-% everything but /h/ was affected
 % also somewhere was unconditional deletion of initial consonants
+
+C / / #_
+
+/ ʲ / C_'?i
+
+% at some point, Nt Nd → tː dː (and likewise for other plosives)
+% however Nd (and at this point, bare t) almost never happened so the few instances merged
+% t → d
+% dː → tː
+% (again, likewise for other plosives)
+
+S > Sː / N_
+N > ∅ / _S
 
 % a bunch of stuff mutated based on palatalization
 % don't remember exactly what went where, but I do remember /ç/ was involved somewhere
@@ -9,20 +37,72 @@
 % while ʃʲ ʒʲ tʃʲ dʒʲ → ɕ ʑ tɕ dʑ
 % θʲ ðʲ > f v  happened also
 
-% at some point, Nt Nd → tː dː (and likewise for other plosives)
-% however Nd (and at this point, bare t) almost never happened so the few instances merged
-% t → d → t
-% dː → tː
-% (again, likewise for other plosives)
+xʲ > ç
+ɣʲ > ʝ
+θʲ > f
+ðʲ > v
+tːʲ > tːʃ
+dʲ > dʒ
+sʲ > ʃ
+zʲ > ʒ
+ʃʲ > ɕ
+ʒʲ > ʑ
+kːʲ > cː
+gʲ > ɟ
+lʲ > ʎ
+hʲ > h
+nʲ > ɲ
+mʲ > m
+pːʲ > pː
+bʲ > b
+
 
 % also x → h in unstressed syllables
 % then h → ∅
 % someting else went to /x/ I think
 % then x → χ at some point under some circumstances
 
+x > h / _[^']
+x > χ
+h > x / _'
+
+h > ∅
+
 % vowels did some funky fresh things
 % V → ə / -stress
 % or similar
 % then ə → V0 / _(C...)V0
-% this recursed I believe
-% so, e.g., ərəʑi → iriʑi
+% this *not* recursed
+
+V > ə / [^']_
+
+' > ∅
+
+ə > i / _C*i
+ə > e / _C*e
+ə > ɛ / _C*ɛ
+ə > u / _C*u
+ə > o / _C*o
+ə > ɔ / _C*ɔ
+ə > a / _C*a
+
+% it's more complicated than this
+% ə > ∅
+
+ə > ∅ / _#
+
+ʎ > l / _#
+ʎ > j
+cː > ç
+ɟ > ʝ
+ç > ɕ
+ʝ > ʑ
+
+% plosive rearrange to primary length contrast
+
+[td] / ː / [td]_
+[pb] / ː / [pb]_
+[kg] / ː / [kg]_
+
+T > D / _[^ː]
+Dː > Tː
