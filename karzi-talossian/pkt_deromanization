@@ -6,3 +6,9 @@ e / ɛ /
 ź / ʒ /
 ǵ / ɣ /
 r / ɾ /
+
+% and I'll throw in a couple checks to catch an incorrect consonant voicing
+K > G / V_V
+
+G > K / #_
+G > K / [^aɛiou]_
